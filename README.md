@@ -15,16 +15,16 @@ scrapy crawl quotes
 ```scrapy crawl quotes -o items.xml```
 
 
-### Save Output to JSON File:
-```scrapy crawl quotes -o items.json```
-
 ### Create new spider:
 ```scrapy genspider example example.com```
 
 
-# Packages need to be installed:
+## Packages need to be installed:
+
 ```pip install mysql-connector-python```
 
 ```pip install scrapy-user-agents```
+
+```pip install scrapy-proxy-pool```
 
 

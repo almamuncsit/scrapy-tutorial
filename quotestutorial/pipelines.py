@@ -26,6 +26,6 @@ class QuotestutorialPipeline:
 
     def store_db(self, item):
         sql = "INSERT INTO quotes (title, author, tags) VALUES (%s, %s, %s)"
-        val = (item['title'][0], item['author'][0], item['tags'][0])
+        val = (item['title'][0], item['author'][0], ', '.join(item['tags']))
         self.cursor.execute(sql, val)
         self.conn.commit()
